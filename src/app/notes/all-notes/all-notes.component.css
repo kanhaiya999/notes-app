@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|PT+Sans:400,700");
+.main-container {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 500px; */
+    margin: auto;
+    width: 100%;
+    padding-top: 50px;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+
+.form-outer {
+    /* max-width: 100%; 
+    margin: auto;*/
+    /* display: flex;*/
+    /*margin-right: center;
+    justify-content: center; */
+    /*  margin-left: 90px;*/
+}
+
+.add-button {
+    text-align: left;
+    margin-left: 60px;
+}
+
+.form-input {
+    /* margin: 10px 40px 0 0; */
+    margin-right: 20px;
+    margin-left: 60px;
+    position: relative;
+    display: flex;
+    /* align-items: right;
+    justify-content: right; */
+}
+
+input {
+    padding: 5px 10px 5px 50px;
+    font-size: 18px;
+    line-height: 30px;
+    outline: 0;
+    display: block;
+    /*  color: #4b00ff;*/
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #2C3E50;
+}
+
+.icon {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    font-size: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .notes-list {
+    margin-top: 35px;
+}
+
+.notes-list {
+    margin-top: 35px;
+} */
+
+app-note-card {
+    /* display: block;
+    margin-bottom: 25px; */
+}
+
+
+/*
+
+.btn-block {
+    width: 100%;
+} */
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #74EbD5;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+
+@media only screen and (max-width: 1050px) {
+    .form-outer {
+        justify-content: center;
+        text-align: center;
+    }
+    .add-button {
+        text-align: center;
+        justify-content: center;
+        margin-right: 60px;
+    }
+    .form-input {
+        margin: 30px 30px 30px 30px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    input {
+        width: 350px;
+    }
+}

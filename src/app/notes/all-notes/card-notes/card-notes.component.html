@@ -1,0 +1,23 @@
+<!-- <div #container class="note-card-container" [routerLink]="[index]">
+    <div class="note-card-content">
+        <h1 class="p-1">{{note.title}}</h1>
+        <div class="card-body">
+            <p class="p-1">
+                {{note.body}}
+            </p>
+            <div class="fade-out-truncation"></div>
+        </div>
+    </div>
+
+
+
+</div> -->
+
+
+
+<div class="box">
+    <h3>{{note.title}}</h3>
+    <p> {{note.body}}</p>
+    <a><button [routerLink]="[index]">Read More</button></a>
+    <span class="count">{{index + 1 }}</span>
+</div>

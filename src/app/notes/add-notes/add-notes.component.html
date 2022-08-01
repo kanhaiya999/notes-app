@@ -1,0 +1,47 @@
+<!-- <form (ngSubmit)="onSubmit()" [formGroup]="notesForm">
+    <div class="form-group mt-5">
+        <label for="exampleFormControlInput1" class="mb-2">Title</label>
+        <input type="text" class="form-control" name="title" id="exampleFormControlInput1" placeholder="" formControlName="title" autocomplete="off" required>
+    </div>
+
+    <div class="form-group mt-3">
+        <label for="exampleFormControlTextarea1" class="mb-2">Body</label>
+        <textarea class="form-control" type="text" id="exampleFormControlTextarea1" rows="5" name="body" formControlName="body" required></textarea>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-outline-success " [disabled]="!notesForm.valid">  &nbsp; {{editMode ? 'Save' : 'Add Notes '}} &nbsp;   </button>
+        <button type="button" class="btn btn-outline-danger " routerLink="/" style="margin-left: 10px;">Cancel</button>
+    </div>
+</form> -->
+
+
+<div class="main_div">
+    <div class="box">
+        <h1>{{editMode ? 'Edit Notes' : 'New Notes '}}</h1>
+        <form (ngSubmit)="onSubmit()" [formGroup]="notesForm">
+            <div class="inputBox form-group">
+                <input type="text" name="title" autocomplete="off" formControlName="title" required>
+                <label> Title </label>
+                <p *ngIf="!notesForm.get('title').valid && notesForm.get('title').touched">Please Enter valid title!</p>
+            </div>
+            <br>
+            <div class="inputBox">
+                <textarea type="text" name="body" #inputbody autocomplete="off" rows="2" formControlName="body" required></textarea>
+                <label> Body </label>
+                <p *ngIf="!notesForm.get('body').valid && notesForm.get('body').touched">Please Enter valid body!</p>
+            </div>
+            <div class="row mt-2">
+
+                <div class="col-6">
+                    <button type="submit" [disabled]="!notesForm.valid">&nbsp; {{editMode ? 'Save' : 'Add Notes '}} &nbsp; </button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-outline-danger " routerLink="/">Cancel</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>

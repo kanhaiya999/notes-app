@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Noticia+Text&family=Zen+Kurenaido&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+}
+
+.container1 {
+    height: 100vh;
+    background: #f0f9ff;
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.testimonial-content {
+    text-align: center;
+    padding: 2rem;
+    width: 400px;
+    height: auto;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px -2px hsla(0, 0%, 0%, 0.1);
+    margin-top: -2.5rem;
+}
+
+.testimonial-text {
+    font-family: "Noticia Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 2;
+    color: #64748b;
+    margin: 3rem 0;
+}
+
+.testimonial-name {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.date {
+    font-family: "Lato", sans-serif;
+    font-size: 0.75rem;
+    color: #64748b;
+    letter-spacing: 0.05rem;
+    top: 20px;
+    margin-left: 50%;
+}
+
+.testimonial-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: relative;
+    background-color: #FF5ACD;
+}
+
+.testimonial-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: 0.5rem solid #e0f2fe;
+    box-shadow: 0 1px hsla(0, 0%, 0%, 0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.testimonial-image p {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 8px;
+}
+
+.btn-grp button {
+    margin-top: 25px;
+    text-align: center;
+    width: 80px;
+    border-radius: 15px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 1050px) {
+    .container {
+        height: auto;
+    }
+    
+}
